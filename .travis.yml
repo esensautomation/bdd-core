@@ -1,0 +1,36 @@
+# language to be used in Travis Dynamic environment
+language: java
+
+jdk:
+  - oraclejdk8
+
+addons:
+  artifacts:
+    working_dir: target
+
+# jobs workflow
+# build, test and deploy
+# usage of external scripts for readability
+jobs:
+  include:
+    - stage: build
+      name: Compile
+      before_script: echo "BUILD"
+      script: mvn clean install -DskipTests=true
+      after_success: echo "SUCCESS"
+      after_failure: echo "FAILURE"
+    - stage: test
+      name: Run sample tests
+      before_script: echo "TEST"
+      script: mvn test
+      after_success: echo "SUCCESS"
+      after_failure: echo "FAILURE"
+      addons:
+        artifacts:
+          working_dir: target/cucumber-html-reports
+    - stage: deploy
+      name: Deploy Stable Image
+      before_script: echo "DEPLOY"
+      script: mvn deploy
+      after_success: echo "SUCCESS"
+      after_failure: echo "FAILURE"
