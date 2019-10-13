@@ -21,6 +21,7 @@ jobs:
       name: Run sample tests
       before_script: echo "TEST"
       script: mvn test
+      after_script: rm -rf docs/cucumber-html-reports && cp target/cucumber-html-reports docs/cucumber-html-reports
       after_success: echo "SUCCESS"
       after_failure: echo "FAILURE"
       addons:
