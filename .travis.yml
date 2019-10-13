@@ -2,6 +2,7 @@
 language: java
 
 addons:
+  chrome: stable
   artifacts:
     working_dir: target
 
