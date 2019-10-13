@@ -29,6 +29,6 @@ jobs:
     - stage: deploy
       name: Deploy Stable Image
       before_script: echo "DEPLOY"
-      script: mvn deploy
+      script: mvn --settings .m2/settings.xml deploy
       after_success: echo "SUCCESS"
       after_failure: echo "FAILURE"
