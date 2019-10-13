@@ -2,7 +2,13 @@
 language: java
 
 addons:
-  chrome: stable
+  apt:
+    update: true
+    sources:
+      - google-chrome
+    packages:
+      - dpkg
+      - google-chrome-stable
   artifacts:
     working_dir: target
 
@@ -14,19 +20,23 @@ jobs:
     - stage: build
       name: Compile
       before_script: echo "BUILD"
-      script: mvn clean install -DskipTests=true
+      script:
+        - sh -e /etc/init.d/xvfb start
+        - mvn clean install -DskipTests=true
       after_success: echo "SUCCESS"
       after_failure: echo "FAILURE"
     - stage: test
       name: Run sample tests
       before_script: echo "TEST"
       script: mvn test
-      after_script: rm -rf docs/cucumber-html-reports && cp target/cucumber-html-reports docs/cucumber-html-reports
+      after_script:
+        - rm -rf docs/cucumber-html-reports
+        - cp target/cucumber-html-reports docs/cucumber-html-reports
       after_success: echo "SUCCESS"
       after_failure: echo "FAILURE"
       addons:
         artifacts:
-          working_dir: target/cucumber-html-reports
+          working_dir: target/cucumber-html-reports/
     - stage: deploy
       name: Deploy Stable Image
       before_script: echo "DEPLOY"
