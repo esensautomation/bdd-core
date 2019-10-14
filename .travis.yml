@@ -21,7 +21,6 @@ jobs:
       name: Compile
       before_script: echo "BUILD"
       script:
-        - sh -e /etc/init.d/xvfb start
         - mvn clean install -DskipTests=true
       after_success: echo "SUCCESS"
       after_failure: echo "FAILURE"
@@ -36,7 +35,7 @@ jobs:
       after_failure: echo "FAILURE"
       addons:
         artifacts:
-          working_dir: target/cucumber-html-reports/
+          working_dir: docs/cucumber-html-reports
     - stage: deploy
       name: Deploy Stable Image
       before_script: echo "DEPLOY"
