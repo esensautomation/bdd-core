@@ -30,6 +30,6 @@ See latest test reports
 
 See latest SonarQube scan
 
-[here]()
+[here](https://sonarcloud.io/dashboard?id=esensautomation_bdd-core)
 
 --------------------

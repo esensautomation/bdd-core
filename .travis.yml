@@ -6,13 +6,7 @@ addons:
     organization: "esensautomation"
     token:
       secure: "travis encrypt 76468712dafb3b31ef2a1b3913c02e47cd55fed0" # encrypted value of your token
-  apt:
-    update: true
-    sources:
-      - google-chrome
-    packages:
-      - dpkg
-      - google-chrome-stable
+  chrome: stable
   artifacts:
     working_dir: target
 
