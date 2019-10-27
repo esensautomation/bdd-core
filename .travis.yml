@@ -2,6 +2,10 @@
 language: java
 
 addons:
+  sonarcloud:
+    organization: "esensautomation"
+    token:
+      secure: "**************************" # encrypted value of your token
   apt:
     update: true
     sources:
@@ -24,10 +28,12 @@ jobs:
         - mvn clean install -DskipTests=true
       after_success: echo "SUCCESS"
       after_failure: echo "FAILURE"
+
     - stage: test
-      name: Run sample tests
+      name: SonarQube quality gates
       before_script: echo "TEST"
-      script: mvn test
+      script:
+        - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
       after_script:
         - rm -rf docs/cucumber-html-reports
         - cp target/cucumber-html-reports docs/cucumber-html-reports

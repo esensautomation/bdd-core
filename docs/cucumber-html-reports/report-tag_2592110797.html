@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 0.0.2) - Tag: @CuraHealthcare</title>
+<title>Cucumber Reports (no 0.0.4) - Tag: @CuraHealthcare</title>
 
 </head>
 <body>
@@ -74,9 +74,9 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>Automation Tests</td>
-              <td>0.0.2</td>
-            <td>13 Oct 2019, 12:13</td>
+      <td>Sample Tests</td>
+              <td>0.0.4</td>
+            <td>20 Oct 2019, 08:27</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@CuraHealthcare</td>
-          <td      class="passed"    >8</td>
+          <td      class="passed"    >36</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">8</td>
+          <td class="total">36</td>
 
-          <td  class="passed"    >1</td>
+          <td  class="passed"    >3</td>
           <td >0</td>
-          <td class="total">1</td>
+          <td class="total">3</td>
 
-          <td class="duration" data-value="6109478307">6.109</td>
+          <td class="duration" data-value="14164475792">14.164</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,32 +173,27 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_903089385.html">[CuraHealthcare] Authentication</a>
+      <a href="report-feature_10_1949764929.html">[WEB][CuraHealthcare] Appointment</a>
     </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_2149477107.html">@Web</a>
+           <a href="report-tag_2149476083.html">@WEB</a>
            <a href="report-tag_2592110797.html">@CuraHealthcare</a>
-           <a href="report-tag_2545127340.html">@release-3</a>
-           <a href="report-tag_4118942718.html">@issue-3</a>
-           <a href="report-tag_3569958615.html">@Authentication</a>
-           <a href="report-tag_835882713.html">@Chrome</a>
-           <a href="report-tag_2208784675.html">@Form</a>
            <a href="report-tag_1510774907.html">@Nominal</a>
            <a href="report-tag_156343294.html">@Critical</a>
       </div>
 
   
-  <span class="lead-duration duration">6.109</span>
+  <span class="lead-duration duration">6.585</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Nominal Case</span>
+  <span class="name">Unauthentified appointment</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -229,7 +224,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioHooks.initScenarioContext()</span>
                         
-  <span class="lead-duration duration">1.115</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
@@ -264,9 +259,678 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">I want to use <span class="argument">&quot;Chrome&quot;</span> driver</span>
+  <span class="name">I want to use <span class="argument">&quot;Chrome&quot;</span> web driver</span>
   
-  <span class="lead-duration duration">3.566</span>
+  <span class="lead-duration duration">2.747</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I want to use url <span class="argument">&quot;https://katalon-demo-cura.herokuapp.com/&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I open web client</span>
+  
+  <span class="lead-duration duration">1.184</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see web element <span class="argument">&quot;id-&gt;btn-make-appointment&quot;</span></span>
+  
+  <span class="lead-duration duration">0.072</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I click on web element <span class="argument">&quot;id-&gt;btn-make-appointment&quot;</span></span>
+  
+  <span class="lead-duration duration">0.353</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see web element <span class="argument">&quot;id-&gt;txt-username&quot;</span></span>
+  
+  <span class="lead-duration duration">0.056</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;txt-username&quot;</span> with text <span class="argument">&quot;John Doe&quot;</span></span>
+  
+  <span class="lead-duration duration">0.212</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;txt-password&quot;</span> with text <span class="argument">&quot;ThisIsNotAPassword&quot;</span></span>
+  
+  <span class="lead-duration duration">0.185</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on web element <span class="argument">&quot;id-&gt;btn-login&quot;</span></span>
+  
+  <span class="lead-duration duration">0.471</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I wait for web condition <span class="argument">&quot;urlContains-&gt;#appointment&quot;</span></span>
+  
+  <span class="lead-duration duration">0.058</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see web element <span class="argument">&quot;id-&gt;btn-book-appointment&quot;</span></span>
+  
+  <span class="lead-duration duration">0.074</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I click on web element <span class="argument">&quot;id-&gt;btn-book-appointment&quot;</span></span>
+  
+  <span class="lead-duration duration">0.180</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see web element <span class="argument">&quot;xpath-&gt;//div[contains(@class, 'datepicker')]&quot;</span></span>
+  
+  <span class="lead-duration duration">0.058</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I click on web element <span class="argument">&quot;xpath-&gt;/html/body/div/div[1]/table/thead/tr[2]/th[3]&quot;</span></span>
+  
+  <span class="lead-duration duration">0.140</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on web element <span class="argument">&quot;xpath-&gt;/html/body/div/div[1]/table/tbody/tr[1]/td[3]&quot;</span></span>
+  
+  <span class="lead-duration duration">0.144</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on web element <span class="argument">&quot;id-&gt;btn-book-appointment&quot;</span></span>
+  
+  <span class="lead-duration duration">0.261</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I wait for web condition <span class="argument">&quot;urlContains-&gt;#summary&quot;</span></span>
+  
+  <span class="lead-duration duration">0.062</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see web element <span class="argument">&quot;id-&gt;facility&quot;</span></span>
+  
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I navigate to url <span class="argument">&quot;https://katalon-demo-cura.herokuapp.com/history.php#history&quot;</span></span>
+  
+  <span class="lead-duration duration">0.213</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see web element <span class="argument">&quot;id-&gt;history&quot;</span></span>
+  
+  <span class="lead-duration duration">0.051</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-4" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioHooks.cleanDriver()</span>
+                        
+  <span class="lead-duration duration">0.139</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_11_1631426052.html">[WEB][CuraHealthcare] Authentication</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2149476083.html">@WEB</a>
+           <a href="report-tag_2592110797.html">@CuraHealthcare</a>
+           <a href="report-tag_1510774907.html">@Nominal</a>
+           <a href="report-tag_156343294.html">@Critical</a>
+      </div>
+
+  
+  <span class="lead-duration duration">3.858</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Nominal Case</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-6" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioHooks.initScenarioContext()</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I want to use <span class="argument">&quot;Chrome&quot;</span> web driver</span>
+  
+  <span class="lead-duration duration">1.526</span>
 
 </div>
 
@@ -318,9 +982,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">I open web driver</span>
+  <span class="name">I open web client</span>
   
-  <span class="lead-duration duration">1.224</span>
+  <span class="lead-duration duration">1.307</span>
 
 </div>
 
@@ -345,7 +1009,7 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I fill field <span class="argument">&quot;id-&gt;txt-username&quot;</span> with <span class="argument">&quot;John Doe&quot;</span></span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;txt-username&quot;</span> with text <span class="argument">&quot;John Doe&quot;</span></span>
   
   <span class="lead-duration duration">0.252</span>
 
@@ -372,9 +1036,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I fill field <span class="argument">&quot;id-&gt;txt-password&quot;</span> with <span class="argument">&quot;ThisIsNotAPassword&quot;</span></span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;txt-password&quot;</span> with text <span class="argument">&quot;ThisIsNotAPassword&quot;</span></span>
   
-  <span class="lead-duration duration">0.189</span>
+  <span class="lead-duration duration">0.179</span>
 
 </div>
 
@@ -399,9 +1063,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I click on element <span class="argument">&quot;id-&gt;btn-login&quot;</span></span>
+  <span class="name">I click on web element <span class="argument">&quot;id-&gt;btn-login&quot;</span></span>
   
-  <span class="lead-duration duration">0.540</span>
+  <span class="lead-duration duration">0.532</span>
 
 </div>
 
@@ -428,7 +1092,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I wait for web condition <span class="argument">&quot;urlContains-&gt;#appointment&quot;</span></span>
   
-  <span class="lead-duration duration">0.057</span>
+  <span class="lead-duration duration">0.012</span>
 
 </div>
 
@@ -453,9 +1117,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see element <span class="argument">&quot;id-&gt;combo_facility&quot;</span></span>
+  <span class="name">I should see web element <span class="argument">&quot;id-&gt;combo_facility&quot;</span></span>
   
-  <span class="lead-duration duration">0.279</span>
+  <span class="lead-duration duration">0.047</span>
 
 </div>
 
@@ -483,7 +1147,7 @@ $(document).ready(function() {
     
 
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -495,13 +1159,358 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioHooks.cleanDriver()</span>
                         
-  <span class="lead-duration duration">0.140</span>
+  <span class="lead-duration duration">0.105</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_11_1631426052.html">[WEB][CuraHealthcare] Authentication</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2149476083.html">@WEB</a>
+           <a href="report-tag_2592110797.html">@CuraHealthcare</a>
+           <a href="report-tag_493544695.html">@ErrorCase</a>
+           <a href="report-tag_156343294.html">@Critical</a>
+      </div>
+
+  
+  <span class="lead-duration duration">3.720</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Error Case</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-10" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioHooks.initScenarioContext()</span>
+                        
+  <span class="lead-duration duration">0.003</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I want to use <span class="argument">&quot;Chrome&quot;</span> web driver</span>
+  
+  <span class="lead-duration duration">1.592</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I want to use url <span class="argument">&quot;https://katalon-demo-cura.herokuapp.com/profile.php#login&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I open web client</span>
+  
+  <span class="lead-duration duration">1.214</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;txt-username&quot;</span> with text <span class="argument">&quot;azertyuiop&quot;</span></span>
+  
+  <span class="lead-duration duration">0.245</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;txt-password&quot;</span> with text <span class="argument">&quot;azertyuiop&quot;</span></span>
+  
+  <span class="lead-duration duration">0.130</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on web element <span class="argument">&quot;id-&gt;btn-login&quot;</span></span>
+  
+  <span class="lead-duration duration">0.404</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see web element <span class="argument">&quot;xpath-&gt;//p[contains(@class, 'text-danger')]&quot;</span></span>
+  
+  <span class="lead-duration duration">0.095</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see text <span class="argument">&quot;Login failed!&quot;</span> in web element <span class="argument">&quot;xpath-&gt;//p[contains(@class, 'text-danger')]&quot;</span></span>
+  
+  <span class="lead-duration duration">0.035</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioHooks.cleanDriver()</span>
+                        
+  <span class="lead-duration duration">0.164</span>
 
           </div>
 

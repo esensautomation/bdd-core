@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.apothuaud.automation.tools</groupId>
-    <version>0.0.2</version>
+    <groupId>com.esens.automation.bdd</groupId>
+    <version>0.0.4</version>
     <artifactId>bdd-core</artifactId>
 
     <packaging>jar</packaging>
@@ -19,6 +19,7 @@
         <rest-assured.version>4.0.0</rest-assured.version>
         <selenium-java.version>3.141.59</selenium-java.version>
         <webdrivermanager.version>3.7.1</webdrivermanager.version>
+        <appium-java-client.version>7.2.0</appium-java-client.version>
         <cucumber-reporting.version>4.10.0</cucumber-reporting.version>
 
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -73,6 +74,12 @@
         </dependency>
 
         <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>${appium-java-client.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
             <version>${cucumber-reporting.version}</version>
@@ -98,13 +105,5 @@
         </plugins>
 
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub OWNER Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/esensautomation/bdd-core</url>
-        </repository>
-    </distributionManagement>
 
 </project>

@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 0.0.2) - Features Overview</title>
+<title>Cucumber Reports (no 0.0.4) - Features Overview</title>
 
 
   <script>
@@ -50,7 +50,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                226,
+                307,
                 0,
                 0,
                 0,
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 226) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 307) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,7 +106,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                18,
+                26,
                 0
             ],
             backgroundColor: [
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 18) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 26) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,7 +153,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   11,
+                   15,
                    0
                ],
                backgroundColor: [
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 11) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 15) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,9 +228,9 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>Automation Tests</td>
-              <td>0.0.2</td>
-            <td>13 Oct 2019, 12:13</td>
+      <td>Sample Tests</td>
+              <td>0.0.4</td>
+            <td>20 Oct 2019, 08:27</td>
     </tr>
   </tbody>
 </table>
@@ -241,20 +241,8 @@ $(document).ready(function() {
 <table class="table table-bordered" id="classifications">
   <tbody>
           <tr class="info">
-        <th>AUTs</th>
-        <td>Jsonplaceholder, Spotify v1, TheInternet, CURA Healthcare</td>
-      </tr>
-          <tr class="info">
         <th>Test Platform</th>
         <td>mac os x</td>
-      </tr>
-          <tr class="info">
-        <th>Test Frameworks</th>
-        <td>RestAssured, Selenium</td>
-      </tr>
-          <tr class="info">
-        <th>Test Browsers</th>
-        <td>Chrome</td>
       </tr>
       </tbody>
 </table>
@@ -347,24 +335,7 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-feature_903089385.html">[CuraHealthcare] Authentication</a></td>
-
-        <td      class="passed"    >8</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">8</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="6109478307">6.109</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_1_3836008349.html">[Jsonplaceholder][Albums] Create an Album</a></td>
+        <td class="tagname"><a href="report-feature_457056370.html">[API][Jsonplaceholder] Create albums</a></td>
 
         <td      class="passed"    >25</td>
         <td >0</td>
@@ -377,11 +348,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="3447143114">3.447</td>
+        <td class="duration" data-value="7287990338">7.287</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_2_4249116172.html">[Jsonplaceholder][Albums] Delete an Album</a></td>
+        <td class="tagname"><a href="report-feature_1_870164193.html">[API][Jsonplaceholder] Delete albums</a></td>
 
         <td      class="passed"    >10</td>
         <td >0</td>
@@ -394,11 +365,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="591749797">0.591</td>
+        <td class="duration" data-value="966733203">0.966</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_3_2939431095.html">[Jsonplaceholder][Albums] Read an Album</a></td>
+        <td class="tagname"><a href="report-feature_2_3418596044.html">[API][Jsonplaceholder] Read album details</a></td>
 
         <td      class="passed"    >13</td>
         <td >0</td>
@@ -411,11 +382,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="212768677">0.212</td>
+        <td class="duration" data-value="204945762">0.204</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_4_2939060426.html">[Jsonplaceholder][Albums] Read Albums List</a></td>
+        <td class="tagname"><a href="report-feature_3_613304661.html">[API][Jsonplaceholder] Read Albums List</a></td>
 
         <td      class="passed"    >3</td>
         <td >0</td>
@@ -428,11 +399,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="199215637">0.199</td>
+        <td class="duration" data-value="173271016">0.173</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_5_3458155690.html">[Jsonplaceholder][Albums] Update an Album</a></td>
+        <td class="tagname"><a href="report-feature_4_79203711.html">[API][Jsonplaceholder] Update an Album</a></td>
 
         <td      class="passed"    >6</td>
         <td >0</td>
@@ -445,11 +416,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="451238596">0.451</td>
+        <td class="duration" data-value="634102296">0.634</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_6_2904949841.html">[Spotify][Playlists] Create a Playlist</a></td>
+        <td class="tagname"><a href="report-feature_5_1889972420.html">[API][Spotify] Create a Playlist</a></td>
 
         <td      class="passed"    >28</td>
         <td >0</td>
@@ -462,11 +433,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="5631904489">5.631</td>
+        <td class="duration" data-value="7050880861">7.050</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_7_205462171.html">[Spotify][Playlists] CRUD</a></td>
+        <td class="tagname"><a href="report-feature_6_3485452046.html">[API][Spotify] CRUD on Playlist</a></td>
 
         <td      class="passed"    >76</td>
         <td >0</td>
@@ -479,11 +450,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="6187215308">6.187</td>
+        <td class="duration" data-value="5976570393">5.976</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_8_2490245943.html">[Spotify][Playlists] Read a Playlist</a></td>
+        <td class="tagname"><a href="report-feature_7_553996394.html">[API][Spotify] Read a Playlist</a></td>
 
         <td      class="passed"    >24</td>
         <td >0</td>
@@ -496,11 +467,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="5252712823">5.252</td>
+        <td class="duration" data-value="5446602657">5.446</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_9_3059136356.html">[Spotify][Playlists] Update a Playlist</a></td>
+        <td class="tagname"><a href="report-feature_8_2044158935.html">[API][Spotify] Update a Playlist</a></td>
 
         <td      class="passed"    >25</td>
         <td >0</td>
@@ -513,24 +484,109 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="5125377635">5.125</td>
+        <td class="duration" data-value="5017129903">5.017</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_10_2389470442.html">[TheInternet] Form Authentication</a></td>
+        <td class="tagname"><a href="report-feature_9_3896944663.html">[ANDROID][Calculator] Additions</a></td>
 
-        <td      class="passed"    >8</td>
+        <td      class="passed"    >24</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">8</td>
+        <td class="total">24</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="48437329124">48.437</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_10_1949764929.html">[WEB][CuraHealthcare] Appointment</a></td>
+
+        <td      class="passed"    >20</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">20</td>
 
         <td  class="passed"    >1</td>
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="3955196998">3.955</td>
+        <td class="duration" data-value="6585391745">6.585</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_11_1631426052.html">[WEB][CuraHealthcare] Authentication</a></td>
+
+        <td      class="passed"    >16</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">16</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="7579084047">7.579</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_12_3086375547.html">[WEB][TheInternet] Checkboxes</a></td>
+
+        <td      class="passed"    >6</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">6</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="3419194798">3.419</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_13_2241338181.html">[WEB][TheInternet] Form Authentication</a></td>
+
+        <td      class="passed"    >24</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">24</td>
+
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="11848907997">11.848</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_14_2274816175.html">[WEB][Yahoo] Create Account</a></td>
+
+        <td      class="passed"    >7</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">7</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="3544453573">3.544</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
@@ -538,19 +594,19 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>226</td>
+      <td>307</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>226</td>
+      <td>307</td>
 
-      <td>18</td>
+      <td>26</td>
       <td>0</td>
-      <td>18</td>
+      <td>26</td>
 
-      <td class="duration">37.164</td>
-      <td>11</td>
+      <td class="duration">1:54.172</td>
+      <td>15</td>
     </tr>
     <tr>
       <td></td>

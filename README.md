@@ -1,5 +1,14 @@
-[![Build Status](https://travis-ci.com/esensautomation/bdd-core.svg?branch=master)](https://travis-ci.com/esensautomation/bdd-core)
+# Esens Automation Framework
 
---------------------
+## Core
 
-See latest test reports [here](https://esensautomation.github.io/bdd-core/cucumber-html-reports/overview-features.html)
+### Api Automation
+
+### Web Automation
+
+### Mobile Automation
+
+## Selenium/Appium using external grids
+
+### Browsershots
+

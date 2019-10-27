@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 0.0.2) - Tag: @ErrorCase</title>
+<title>Cucumber Reports (no 0.0.4) - Tag: @ErrorCase</title>
 
 </head>
 <body>
@@ -74,9 +74,9 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>Automation Tests</td>
-              <td>0.0.2</td>
-            <td>13 Oct 2019, 12:13</td>
+      <td>Sample Tests</td>
+              <td>0.0.4</td>
+            <td>20 Oct 2019, 08:27</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@ErrorCase</td>
-          <td      class="passed"    >15</td>
+          <td      class="passed"    >42</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">15</td>
+          <td class="total">42</td>
 
-          <td  class="passed"    >3</td>
+          <td  class="passed"    >7</td>
           <td >0</td>
-          <td class="total">3</td>
+          <td class="total">7</td>
 
-          <td class="duration" data-value="298350557">0.298</td>
+          <td class="duration" data-value="12017087545">12.017</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -173,32 +173,27 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_6_2904949841.html">[Spotify][Playlists] Create a Playlist</a>
+      <a href="report-feature_2_3418596044.html">[API][Jsonplaceholder] Read album details</a>
     </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_2149456313.html">@Api</a>
-           <a href="report-tag_1684125273.html">@Spotify</a>
-           <a href="report-tag_2545127339.html">@release-2</a>
-           <a href="report-tag_2035016413.html">@feature-5</a>
-           <a href="report-tag_83666481.html">@Playlist</a>
-           <a href="report-tag_1128518445.html">@MonoEP</a>
-           <a href="report-tag_2209050847.html">@POST</a>
+           <a href="report-tag_2149455289.html">@API</a>
+           <a href="report-tag_827533098.html">@Jsonplaceholder</a>
            <a href="report-tag_493544695.html">@ErrorCase</a>
            <a href="report-tag_156343294.html">@Critical</a>
       </div>
 
   
-  <span class="lead-duration duration">0.109</span>
+  <span class="lead-duration duration">0.068</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Error Case - no auth token</span>
+  <span class="name">Read an album - v2</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -263,72 +258,8 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I want to use url <span class="argument">&quot;https://api.spotify.com/v1/users/2g5o4vq6ayxp9eo5xlqw6os2k/playlists&quot;</span></span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-        
-
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I want to use request headers as</span>
-  
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-        
-
-
-        
-
-
-                  <table class="step-arguments">
-                          <tr>
-                                  <td>headerName</td>
-                                  <td>headerValue</td>
-                              </tr>
-                          <tr>
-                                  <td>Content-Type</td>
-                                  <td>application/json</td>
-                              </tr>
-                      </table>
-        
-        
-
-        
-
-        
-  
-        
-
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I want to use request json body from file <span class="argument">&quot;spotify/request/POST_create_playlist.json&quot;</span></span>
+  <span class="keyword indention">Given</span>
+  <span class="name">I want to use url <span class="argument">&quot;https://jsonplaceholder.typicode.com/albums/14567890987654&quot;</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -355,9 +286,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">I send <span class="argument">&quot;POST&quot;</span> request</span>
+  <span class="name">I send <span class="argument">&quot;GET&quot;</span> request</span>
   
-  <span class="lead-duration duration">0.096</span>
+  <span class="lead-duration duration">0.066</span>
 
 </div>
 
@@ -382,7 +313,7 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should have response with status code <span class="argument">&quot;401&quot;</span></span>
+  <span class="name">I should have response with status code <span class="argument">&quot;404&quot;</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -394,43 +325,6 @@ $(document).ready(function() {
         
 
 
-        
-        
-
-        
-
-        
-  
-        
-
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I should have response json attributes equals to</span>
-  
-  <span class="lead-duration duration">0.011</span>
-
-</div>
-
-        
-
-
-        
-
-
-                  <table class="step-arguments">
-                          <tr>
-                                  <td>jsonPath</td>
-                                  <td>expected</td>
-                              </tr>
-                          <tr>
-                                  <td>error.message</td>
-                                  <td>No token provided</td>
-                              </tr>
-                      </table>
         
         
 
@@ -489,25 +383,20 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_8_2490245943.html">[Spotify][Playlists] Read a Playlist</a>
+      <a href="report-feature_5_1889972420.html">[API][Spotify] Create a Playlist</a>
     </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_2149456313.html">@Api</a>
+           <a href="report-tag_2149455289.html">@API</a>
            <a href="report-tag_1684125273.html">@Spotify</a>
-           <a href="report-tag_2545127339.html">@release-2</a>
-           <a href="report-tag_2035016414.html">@feature-6</a>
-           <a href="report-tag_83666481.html">@Playlist</a>
-           <a href="report-tag_1128518445.html">@MonoEP</a>
-           <a href="report-tag_2149460725.html">@GET</a>
            <a href="report-tag_493544695.html">@ErrorCase</a>
            <a href="report-tag_156343294.html">@Critical</a>
       </div>
 
   
-  <span class="lead-duration duration">0.100</span>
+  <span class="lead-duration duration">0.109</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
@@ -545,7 +434,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">ScenarioHooks.initScenarioContext()</span>
                         
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
@@ -579,8 +468,8 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I want to use url <span class="argument">&quot;https://api.spotify.com/v1/playlists/1cZirM1Yv7bcx9nj2ZDNOo&quot;</span></span>
+  <span class="keyword indention">And</span>
+  <span class="name">I want to use url <span class="argument">&quot;https://api.spotify.com/v1/users/2g5o4vq6ayxp9eo5xlqw6os2k/playlists&quot;</span></span>
   
   <span class="lead-duration duration">0.000</span>
 
@@ -606,10 +495,74 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I send <span class="argument">&quot;GET&quot;</span> request</span>
+  <span class="keyword indention">And</span>
+  <span class="name">I want to use request headers as</span>
   
-  <span class="lead-duration duration">0.084</span>
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+        
+
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>headerName</td>
+                                  <td>headerValue</td>
+                              </tr>
+                          <tr>
+                                  <td>Content-Type</td>
+                                  <td>application/json</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I want to use request json body from file <span class="argument">&quot;samples/api/spotify/v1/request/POST_create_playlist.json&quot;</span></span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I send <span class="argument">&quot;POST&quot;</span> request</span>
+  
+  <span class="lead-duration duration">0.087</span>
 
 </div>
 
@@ -661,9 +614,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should have response json attributes equals to</span>
+  <span class="name">I should have response with json attributes equals to</span>
   
-  <span class="lead-duration duration">0.015</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -741,25 +694,20 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_9_3059136356.html">[Spotify][Playlists] Update a Playlist</a>
+      <a href="report-feature_7_553996394.html">[API][Spotify] Read a Playlist</a>
     </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_2149456313.html">@Api</a>
+           <a href="report-tag_2149455289.html">@API</a>
            <a href="report-tag_1684125273.html">@Spotify</a>
-           <a href="report-tag_2545127339.html">@release-2</a>
-           <a href="report-tag_2035016415.html">@feature-7</a>
-           <a href="report-tag_83666481.html">@Playlist</a>
-           <a href="report-tag_1128518445.html">@MonoEP</a>
-           <a href="report-tag_2149469870.html">@PUT</a>
            <a href="report-tag_493544695.html">@ErrorCase</a>
            <a href="report-tag_156343294.html">@Critical</a>
       </div>
 
   
-  <span class="lead-duration duration">0.088</span>
+  <span class="lead-duration duration">0.076</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
@@ -832,9 +780,256 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">I want to use url <span class="argument">&quot;https://api.spotify.com/v1/playlists/4g7UzQ4im7lbuEJhyEgJWJ&quot;</span></span>
+  <span class="name">I want to use url <span class="argument">&quot;https://api.spotify.com/v1/playlists/1cZirM1Yv7bcx9nj2ZDNOo&quot;</span></span>
   
   <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I send <span class="argument">&quot;GET&quot;</span> request</span>
+  
+  <span class="lead-duration duration">0.064</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should have response with status code <span class="argument">&quot;401&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I should have response with json attributes equals to</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+        
+
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>jsonPath</td>
+                                  <td>expected</td>
+                              </tr>
+                          <tr>
+                                  <td>error.message</td>
+                                  <td>No token provided</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-12" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioHooks.cleanDriver()</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_8_2044158935.html">[API][Spotify] Update a Playlist</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2149455289.html">@API</a>
+           <a href="report-tag_1684125273.html">@Spotify</a>
+           <a href="report-tag_493544695.html">@ErrorCase</a>
+           <a href="report-tag_156343294.html">@Critical</a>
+      </div>
+
+  
+  <span class="lead-duration duration">0.086</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Error Case - no auth token</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-14" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioHooks.initScenarioContext()</span>
+                        
+  <span class="lead-duration duration">0.002</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I want to use url <span class="argument">&quot;https://api.spotify.com/v1/playlists/4g7UzQ4im7lbuEJhyEgJWJ&quot;</span></span>
+  
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -896,9 +1091,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I want to use request json body from file <span class="argument">&quot;spotify/request/PUT_update_playlist.json&quot;</span></span>
+  <span class="name">I want to use request json body from file <span class="argument">&quot;samples/api/spotify/v1/request/PUT_update_playlist.json&quot;</span></span>
   
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -925,7 +1120,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I send <span class="argument">&quot;PUT&quot;</span> request</span>
   
-  <span class="lead-duration duration">0.070</span>
+  <span class="lead-duration duration">0.068</span>
 
 </div>
 
@@ -950,9 +1145,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should have response json attributes equals to</span>
+  <span class="name">I should have response with json attributes equals to</span>
   
-  <span class="lead-duration duration">0.016</span>
+  <span class="lead-duration duration">0.012</span>
 
 </div>
 
@@ -990,7 +1185,7 @@ $(document).ready(function() {
     
 
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1002,13 +1197,1048 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-12" class="inner-level collapse collapsable-details ">
+    <div id="after-16" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">ScenarioHooks.cleanDriver()</span>
                         
+  <span class="lead-duration duration">0.001</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_11_1631426052.html">[WEB][CuraHealthcare] Authentication</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2149476083.html">@WEB</a>
+           <a href="report-tag_2592110797.html">@CuraHealthcare</a>
+           <a href="report-tag_493544695.html">@ErrorCase</a>
+           <a href="report-tag_156343294.html">@Critical</a>
+      </div>
+
+  
+  <span class="lead-duration duration">3.720</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Error Case</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+    
+
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-18" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioHooks.initScenarioContext()</span>
+                        
+  <span class="lead-duration duration">0.003</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I want to use <span class="argument">&quot;Chrome&quot;</span> web driver</span>
+  
+  <span class="lead-duration duration">1.592</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I want to use url <span class="argument">&quot;https://katalon-demo-cura.herokuapp.com/profile.php#login&quot;</span></span>
+  
   <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I open web client</span>
+  
+  <span class="lead-duration duration">1.214</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;txt-username&quot;</span> with text <span class="argument">&quot;azertyuiop&quot;</span></span>
+  
+  <span class="lead-duration duration">0.245</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;txt-password&quot;</span> with text <span class="argument">&quot;azertyuiop&quot;</span></span>
+  
+  <span class="lead-duration duration">0.130</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on web element <span class="argument">&quot;id-&gt;btn-login&quot;</span></span>
+  
+  <span class="lead-duration duration">0.404</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see web element <span class="argument">&quot;xpath-&gt;//p[contains(@class, 'text-danger')]&quot;</span></span>
+  
+  <span class="lead-duration duration">0.095</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see text <span class="argument">&quot;Login failed!&quot;</span> in web element <span class="argument">&quot;xpath-&gt;//p[contains(@class, 'text-danger')]&quot;</span></span>
+  
+  <span class="lead-duration duration">0.035</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-20" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioHooks.cleanDriver()</span>
+                        
+  <span class="lead-duration duration">0.164</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_13_2241338181.html">[WEB][TheInternet] Form Authentication</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2149476083.html">@WEB</a>
+           <a href="report-tag_706996849.html">@TheInternet</a>
+           <a href="report-tag_493544695.html">@ErrorCase</a>
+           <a href="report-tag_156343294.html">@Critical</a>
+      </div>
+
+  
+  <span class="lead-duration duration">3.944</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Error Case - Invalid username</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+    
+
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-22" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioHooks.initScenarioContext()</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I want to use <span class="argument">&quot;Chrome&quot;</span> web driver</span>
+  
+  <span class="lead-duration duration">1.640</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I want to use url <span class="argument">&quot;https://the-internet.herokuapp.com/login&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I open web client</span>
+  
+  <span class="lead-duration duration">1.485</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;username&quot;</span> with text <span class="argument">&quot;nottomsmith&quot;</span></span>
+  
+  <span class="lead-duration duration">0.162</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;password&quot;</span> with text <span class="argument">&quot;SuperSecretPassword!&quot;</span></span>
+  
+  <span class="lead-duration duration">0.166</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on web element <span class="argument">&quot;xpath-&gt;//button//i[contains(text(), ' Login')]&quot;</span></span>
+  
+  <span class="lead-duration duration">0.407</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see web element <span class="argument">&quot;id-&gt;flash&quot;</span></span>
+  
+  <span class="lead-duration duration">0.052</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I should see text <span class="argument">&quot;Your username is invalid!&quot;</span> in web element <span class="argument">&quot;id-&gt;flash&quot;</span></span>
+  
+  <span class="lead-duration duration">0.029</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-24" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioHooks.cleanDriver()</span>
+                        
+  <span class="lead-duration duration">0.160</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_13_2241338181.html">[WEB][TheInternet] Form Authentication</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_2149476083.html">@WEB</a>
+           <a href="report-tag_706996849.html">@TheInternet</a>
+           <a href="report-tag_493544695.html">@ErrorCase</a>
+           <a href="report-tag_156343294.html">@Critical</a>
+      </div>
+
+  
+  <span class="lead-duration duration">4.010</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Error Case - Invalid password</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+    
+
+  <div class="inner-level hooks-element-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-26" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">ScenarioHooks.initScenarioContext()</span>
+                        
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+                      
+
+          
+                    
+
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I want to use <span class="argument">&quot;Chrome&quot;</span> web driver</span>
+  
+  <span class="lead-duration duration">1.555</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I want to use url <span class="argument">&quot;https://the-internet.herokuapp.com/login&quot;</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I open web client</span>
+  
+  <span class="lead-duration duration">1.604</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;username&quot;</span> with text <span class="argument">&quot;tomsmith&quot;</span></span>
+  
+  <span class="lead-duration duration">0.145</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I fill web field <span class="argument">&quot;id-&gt;password&quot;</span> with text <span class="argument">&quot;NotSuperSecretPassword!&quot;</span></span>
+  
+  <span class="lead-duration duration">0.185</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on web element <span class="argument">&quot;xpath-&gt;//button//i[contains(text(), ' Login')]&quot;</span></span>
+  
+  <span class="lead-duration duration">0.431</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see web element <span class="argument">&quot;id-&gt;flash&quot;</span></span>
+  
+  <span class="lead-duration duration">0.057</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I should see text <span class="argument">&quot;Your password is invalid!&quot;</span> in web element <span class="argument">&quot;id-&gt;flash&quot;</span></span>
+  
+  <span class="lead-duration duration">0.031</span>
+
+</div>
+
+        
+
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  <div class="inner-level hooks-element-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-28">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-28" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">ScenarioHooks.cleanDriver()</span>
+                        
+  <span class="lead-duration duration">0.105</span>
 
           </div>
 

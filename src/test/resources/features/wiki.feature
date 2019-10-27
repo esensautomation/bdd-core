@@ -13,9 +13,9 @@ Feature: Wiki
         Then I should have response with status code "{string}"
 
     Scenario: Prepare web client
-        Given I want to use "{string}" driver
+        Given I want to use "{string}" web driver
 
     Scenario: Web client actions
-        When I fill field "{string}" with "{string}"
+        When I fill web field "{string}" with text "{string}"
 
     Scenario: Web client validations
