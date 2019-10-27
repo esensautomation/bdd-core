@@ -5,7 +5,7 @@ addons:
   sonarcloud:
     organization: "esensautomation"
     token:
-      secure: "**************************" # encrypted value of your token
+      secure: "travis encrypt 76468712dafb3b31ef2a1b3913c02e47cd55fed0" # encrypted value of your token
   apt:
     update: true
     sources:
