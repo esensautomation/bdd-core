@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.com/esensautomation/bdd-core.svg?branch=master)](https://travis-ci.com/esensautomation/bdd-core)
+[![test report](https://img.shields.io/badge/test-report-green)](https://esensautomation.github.io/bdd-core/cucumber-html-reports/overview-features.html)
+
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=esensautomation_bdd-core)](https://sonarcloud.io/dashboard?id=esensautomation_bdd-core)
+
 # Esens Automation Framework
 
 ## Core
@@ -11,25 +16,3 @@
 ## Selenium/Appium using external grids
 
 ### Browsershots
-
-## Code Quality
-
---------------------
-
-Travis CI pipeline : 
-
-[![Build Status](https://travis-ci.com/esensautomation/bdd-core.svg?branch=master)](https://travis-ci.com/esensautomation/bdd-core)
-
---------------------
-
-See latest test reports
-
-[here](https://esensautomation.github.io/bdd-core/cucumber-html-reports/overview-features.html)
-
---------------------
-
-See latest SonarQube scan
-
-[here](https://sonarcloud.io/dashboard?id=esensautomation_bdd-core)
-
---------------------

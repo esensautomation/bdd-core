@@ -12,6 +12,11 @@
 
     <properties>
 
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <!-- Organization and project keys are displayed in the right sidebar of the project homepage -->
+        <sonar.organization>esensautomation</sonar.organization>
+        <sonar.projectKey>esensautomation_bdd-core</sonar.projectKey>
+
         <junit.version>4.12</junit.version>
         <cucumber-java.version>4.7.1</cucumber-java.version>
         <cucumber-junit.version>4.7.1</cucumber-junit.version>
@@ -100,6 +105,12 @@
                     <source>${maven-compiler-plugin.source}</source>
                     <target>${maven-compiler-plugin.target}</target>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.6.1.1688</version>
             </plugin>
 
         </plugins>
