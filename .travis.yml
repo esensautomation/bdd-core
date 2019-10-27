@@ -1,3 +1,4 @@
+dist: xenial
 # language to be used in Travis Dynamic environment
 language: java
 
