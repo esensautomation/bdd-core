@@ -17,7 +17,7 @@
         <sonar.organization>esensautomation</sonar.organization>
         <sonar.projectKey>esensautomation_bdd-core</sonar.projectKey>
 
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
         <cucumber-java.version>4.7.1</cucumber-java.version>
         <cucumber-junit.version>4.7.1</cucumber-junit.version>
         <assertj-core.version>3.13.2</assertj-core.version>
